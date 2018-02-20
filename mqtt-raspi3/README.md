@@ -2,7 +2,7 @@
 docker pull zlee/mqtt-raspi3
 
 2.启动mqtt
-docker run -d --name="mqtt" -h="mqtt" -p 1883:1883 zlee/mqtt:latest
+docker run -d --name="mqtt" -h="mqtt" -p 1883:1883 zlee/mqtt-raspi3
 
 3.进入容器
 docker exec -it mqtt bash
