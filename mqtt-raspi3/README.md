@@ -22,5 +22,6 @@ docker restart mqtt
 
 # 8.mqtt测试
 mosquitto_sub -d -u mqtt -P mqtt -t dev/test
+#
 mosquitto_pub -d -u mqtt -P mqtt -t dev/test -m "hello world"
 
