@@ -12,6 +12,7 @@ vi /etc/mosquitto/mosquitto.conf
 
 # 5.添加如下内容
 allow_anonymous false
+#
 password_file /etc/mosquitto/pwfile
 
 # 6.添加用户并设置密码
