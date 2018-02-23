@@ -8,7 +8,7 @@ ENV frpc_version=0.16.0 \
 RUN set -ex && \
     frpc_latest=https://github.com/fatedier/frp/releases/download/v${frpc_version}/frp_${frpc_version}_linux_arm.tar.gz && \
     frpc_latest_filename=frp_${frpc_version}_linux_arm.tar.gz && \
-    sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
+    sed -i 's/nl.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
     apk update && \
     apk upgrade && \
     apk add --no-cache pcre bash && \
