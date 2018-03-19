@@ -1,4 +1,4 @@
-[Bug fixes for 5.20](https://github.com/bwssytems/ha-bridge/releases)
+# [Bug fixes for 5.20](https://github.com/bwssytems/ha-bridge/releases)
 # habridge version.
 ha-bridge-5.2.1.jar
 # Docker Use.
