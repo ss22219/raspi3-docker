@@ -3,6 +3,7 @@ FROM easypi/alpine-arm:latest
 MAINTAINER ilee
 
 RUN set -ex && \
+    sed -i 's/nl.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
     apk update && \
     apk upgrade && \
     apk add --no-cache bash && \
