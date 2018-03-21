@@ -1,5 +1,5 @@
 #bridge for Dockerfile
-FROM zlee/java8-arm:lates
+FROM zlee/java8-raspi3:latest
 MAINTAINER ilee
 
 ENV habridge_version=5.2.1 \
