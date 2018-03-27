@@ -2,7 +2,7 @@
 FROM easypi/alpine-arm:latest
 MAINTAINER ilee
 
-ENV frpc_version=0.16.0 \
+ENV frpc_version=0.16.1 \
     frpc_DIR=/usr/local/frpc
 
 RUN set -ex && \
