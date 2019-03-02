@@ -8,9 +8,6 @@
 set -e
 FRPC_BIN="/usr/local/frpc/frpc"
 FRPC_CONF="/usr/local/frpc/frpc.ini"
-FRPC_LOG="/var/log/frpc.log"
-
-str_log_level=${str_log_level:-info}   # set log level: debug, info, warn, error
 
 echo "+---------------------------------------------+"
 echo "|              Frpc On Docker                 |"
@@ -26,7 +23,5 @@ if [ ! -r ${FRPC_CONF} ]; then
 fi
 	touch ${FRPC_LOG} > /dev/null 2>&1
 	echo "Starting frpc $(${FRPC_BIN} -v) ..."
-	echo "${FRPC_BIN} -c ${FRPC_CONF} -L ${FRPC_LOG} --log-level=${str_log_level}"
-	      ${FRPC_BIN} -c ${FRPC_CONF} -L ${FRPC_LOG} --log-level=${str_log_level} &
-	tail -f ${FRPC_LOG}
-	exec "tail" -f ${FRPC_LOG}
+	echo "${FRPC_BIN} -c ${FRPC_CONF} &
+	      ${FRPC_BIN} -c ${FRPC_CONF}
